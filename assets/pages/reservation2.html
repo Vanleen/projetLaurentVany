@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL&#8226;CHAMBORD&#8226;PARIS</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <!-- style for all -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- button menu left -->
+        <div class="menu-btn">
+            <div class="menu-bar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <p>MENU</p>
+        </div>
+        <!-- h1 title -->
+        <h1>HOTEL&#8226;CHAMBORD&#8226;PARIS</h1>
+        <!-- button menu right -->
+        <button>
+            <p>RESERVEZ</p>
+        </button>
+    </header>
+    <main>
+        <!-- image background -->
+        <!-- <div class="imageAcceuil"></div> -->
+        <nav>
+            <button>X</button>
+            <ul>
+                <li class="menu-nav"><a href="../../index.html"><span>ACCEUIL</span></a></li>
+                <li class="menu-nav"><span>CHAMBRES & SUITE</span>
+                    <ul class="sous-menu">
+                        <li><a href="chambres.html">VUE D'ENSEMBLE</a></li>
+                        <li><a href="chambre-classique.html">CHAMBRE CLASSIQUE</a></li>
+                        <li><a href="chambre-confort.html">CHAMBRE CONFORT</a></li>
+                        <li><a href="chambre-Deluxe.html">CHAMBRE DELUXE</a></li>
+                        <li><a href="suite.html">SUITE DELUXE</a></li>
+                    </ul>
+                </li>
+                <li class="menu-nav"><span>RESTAURANT</span>
+                    <ul class="sous-menu">
+                        <li><a href="restaurant.html">DÉCOUVREZ NOTRE RESTAURANT</a></li>
+                        <li><a href="restaurant.html#brasserie">CARTE BRASSERIE</a></li>
+                        <li><a href="restaurant.html#degustation">CARTE DÉGUSTATION</a></li>
+                        <li><a href="restaurant.html#restaurant">CARTE RESTAURANT</a></li>
+                    </ul>
+                </li>
+                <li class="menu-nav"><span>LE SPA</span>
+                    <ul class="sous-menu">
+                        <li><a href="spa.html">LE SPA & NOS SOINS</a></li>
+                        <li><a href="spa.html#detente">SOIN DÉTENTE</a></li>
+                        <li><a href="spa.html#decouverte">SOIN DÉCOUVERTE</a></li>
+                        <li><a href="spa.html#relaxant">SOIN RELAXANT</a></li>
+                        <li><a href="spa.html#plaisir">SOIN PLAISIR</a></li>
+                        <li><a href="spa.html#evasion">SOIN ÉVASION</a></li>
+                    </ul>
+                </li>
+                <li class="menu-nav"><a href="reservation.html"><span>RÉSERVATION</span></a></li>
+                <li class="menu-nav"><a href="avis.html"><span>AVIS</span></a></li>
+                <li class="menu-nav"><span>L’HOTEL</span>
+                    <ul class="sous-menu">
+                        <li><a href="qui-sommes-nous.html">QUI SOMMES NOUS</a></li>
+                        <li><a href="carte.html">PLAN & ACCÈS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="form-recrutement.html">RECRUTEMENT</a></li>
+                        <li><a href="evenements.html">ÉVÉNEMENT</a></li>
+                        <li><a href="#">PRESSE</a></li>
+                    </ul>
+                </li>
+                <li class="menu-nav"><a href="#"><span>ACTUALITÉS</span></a></li>
+                <li class="menu-nav"><span>LIENS DIVERS</span>
+                    <ul class="sous-menu">
+                        <li><a href="#">MENTION LÉGALE</a></li>
+                        <li><a href="#">CONDITIONS GÉNÉRALES DE VENTE</a></li>
+                        <li><a href="#">PLAN DU SITE</a></li>
+                        <li><a href="#">IMPRIMER LA PAGE</a></li>
+                        <li><a href="#">S’INSCRIRE À LA NEWSLETTER</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="booking-form">
+                        <div class="form-header">
+                            <h1>RESERVATION</h1>
+                        </div>
+                        <form>
+                            <div class="form-group"> <input class="form-control" type="text" placeholder="CHAMBORD Paris"> <span class="form-label">Destination</span> </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group"> <input class="form-control" type="date" required> <span class="form-label">DATE ARRIVEE</span> </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group"> <input class="form-control" type="date" required> <span class="form-label">DATE DEPART</span> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group"> <select class="form-control" required>
+                                            <option value="" selected hidden>CHAMBRES</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select> <span class="select-arrow"></span> <span class="form-label">Rooms</span> </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"> <select class="form-control" required>
+                                            <option value="" selected hidden>ADULTES</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select> <span class="select-arrow"></span> <span class="form-label">ADULTES</span> </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group"> <select class="form-control" required>
+                                            <option value="" selected hidden>ENFANTS</option>
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select> <span class="select-arrow"></span> <span class="form-label">ENFANTS</span> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group"> <input class="form-control" type="email" placeholder="Email"> <span class="form-label">Email</span> </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group"> <input class="form-control" type="tel" placeholder="Téléphone"> <span class="form-label">TELEPHONE</span> </div>
+                                </div>
+                            </div>
+                            <div class="form-btn"> <button class="submit-btn">RESERVEZ</button> </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Appel jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

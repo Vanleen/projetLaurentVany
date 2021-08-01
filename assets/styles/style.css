@@ -1,0 +1,1630 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --primary-color: #2a2a2aff;
+    --secondary-color: #bf9f61ff;
+    --third-color: #f4f3ecff;
+    --four-color: #ffffff;
+    --five-color: rgb(200, 200, 200);
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--third-color);
+}
+
+/* header */
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+/* header button left*/
+.menu-btn {
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    display: flex;
+    width: 12rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+/* span */
+.menu-bar .bar {
+    margin: .3rem;
+    width: 3rem;
+    height: .2rem;
+    background-color: var(--four-color);
+    position: relative;
+}
+
+.menu-btn p {
+    color: var(--four-color);
+    padding-left: 1rem;
+}
+
+/* title h1 */
+@media (max-width:767px) {
+    h2.h2Header {
+        display: none;
+    }
+}
+
+@media (min-width:768px) {
+    h2.h2Header {
+        color: var(--four-color);
+        align-self: center;
+        font-weight: 200;
+    }
+}
+
+
+/* header button right */
+header button {
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    margin: 1rem;
+    width: 12rem;
+    height: 5rem;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+header button p {
+    color: var(--four-color);
+}
+
+/* image */
+.imageAcceuil {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/pageAcceuil.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 42%;
+}
+
+/* menu-nav */
+@media (max-width:799px) {
+    nav {
+        background-color: rgba(42, 42, 42, 0.9);
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--four-color);
+        overflow: auto;
+        transform: translateX(-100%);
+        z-index: 100;
+    }
+}
+
+@media (min-width:800px) {
+    nav {
+        background-color: rgba(42, 42, 42, 0.9);
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--four-color);
+        overflow: auto;
+        transform: translateX(-100%);
+        z-index: 100;
+    }
+}
+
+@media (min-width:1000px) {
+    nav {
+        background-color: rgba(42, 42, 42, 0.9);
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--four-color);
+        overflow: auto;
+        transform: translateX(-100%);
+        z-index: 100;
+    }
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    color: var(--four-color);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    cursor: pointer;
+    line-height: 2.5rem;
+}
+
+nav ul.sous-menu li {
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--four-color);
+}
+
+nav li.menu-nav span {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    display: block;
+    margin: 4rem;
+}
+
+nav ul.sous-menu {
+    font-size: 1.2rem;
+}
+
+/* 
+                   ,,,, 
+             ,;) .';;;;',
+ ;;,,_,-.-.,;;'_,|I\;;;/),,_
+  `';;/:|:);{ ;;;|| \;/ /;;;\__
+      L;/-';/ \;;\',/;\/;;;.') \
+      .:`''` - \;;'.__/;;;/  . _'-._ 
+    .'/   \     \;;;;;;/.'_7:.  '). \_
+  .''/     | '._ );}{;//.'    '-:  '.,L
+.'. /       \  ( |;;;/_/         \._./;\   _,
+ . /        |\ ( /;;/_/             ';;;\,;;_,
+. /         )__(/;;/_/                (;;'''''
+ /        _;:':;;;;:';-._             );
+/        /   \  `'`   --.'-._         \/
+       .'     '.  ,'         '-,
+      /    /   r--,..__       '.\
+    .'    '  .'        '--._     ]
+    (     :.(;>        _ .' '- ;/
+    |      /:;(    ,_.';(   __.'
+     '- -'"|;:/    (;;;;-'--'
+           |;/      ;;(
+           ''      /;;|
+                   \;;|
+                    \/
+*/
+/* main.mainIdex */
+
+main.mainIndex {
+    padding-top: 100vh;
+}
+
+/* main.mainIndex littel */
+@media (max-width:1023px) {
+
+    main.mainIndex section {
+        width: 100vw;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main.mainIndex section img {
+        max-width: 100%;
+    }
+
+    main.mainIndex section article {
+        font-weight: 200;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main.mainIndex section article h2 {
+        text-align: center;
+        color: var(--secondary-color);
+        padding: 1rem;
+        font-weight: 500;
+    }
+
+    main.mainIndex section article p {
+        color: var(--four-color);
+        text-align: center;
+        max-width: 700px;
+        padding: 3rem;
+    }
+
+    main.mainIndex section article button {
+        color: var(--four-color);
+        border: 1px solid var(--secondary-color);
+        padding: 1rem 2rem;
+        margin: 1rem;
+        background-color: transparent;
+    }
+}
+
+/* main.mainIndex big  */
+@media (min-width:1024px) {
+
+    main.mainIndex section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    main.mainIndex section img {
+        transform: translateX(50px);
+        max-width: 100%;
+    }
+
+    main.mainIndex section article {
+        font-weight: 200;
+        width: 500px;
+        background-color: var(--primary-color);
+        transform: translateX(-50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    main.mainIndex section article h2 {
+        text-align: center;
+        color: var(--secondary-color);
+        padding: 1rem;
+        font-weight: 500;
+    }
+
+    main.mainIndex section article p {
+        color: var(--four-color);
+        text-align: center;
+        padding: 1rem;
+    }
+
+    main.mainIndex section article button {
+        color: var(--four-color);
+        border: 1px solid var(--secondary-color);
+        padding: 1rem 2rem;
+        margin: 1rem;
+        background-color: transparent;
+    }
+}
+
+/* 
+ =ccccc,      ,cccc       ccccc      ,cccc,  ?$$$$$$$,  ,ccc,   -ccc        
+:::"$$$$bc    $$$$$     ::`$$$$$c,  : $$$$$c`:"$$$$???'`."$$$$c,:`?$$c      
+`::::"?$$$$c,z$$$$F     `:: ?$$$$$c,`:`$$$$$h`:`?$$$,` :::`$$$$$$c,"$$h,    
+  `::::."$$$$$$$$$'    ..,,,:"$$$$$$h, ?$$$$$$c`:"$$$$$$$b':"$$$$$$$$$$$c   
+     `::::"?$$$$$$    :"$$$$c:`$$$$$$$$d$$$P$$$b`:`?$$$c : ::`?$$c "?$$$$h, 
+       `:::.$$$$$$$c,`::`????":`?$$$E"?$$$$h ?$$$.`:?$$$h..,,,:"$$$,:."?$$$c 
+         `: $$$$$$$$$c, ::``  :::"$$$b `"$$$ :"$$$b`:`?$$$$$$$c``?$F `:: ":: 
+          .,$$$$$"?$$$$$c,    `:::"$$$$.::"$.:: ?$$$.:.???????" `:::  ` ``` 
+          'J$$$$P'::"?$$$$h,   `:::`?$$$c`::``:: .:: : :::::''   `          
+         :,$$$$$':::::`?$$$$$c,  ::: "::  ::  ` ::'   ``                    
+        .'J$$$$F  `::::: .::::    ` :::'  `                                 
+       .: ???):     `:: :::::                                               
+       : :::::'        `                                                    
+        ``
+*/
+/* mainChambre */
+.mainChambre {
+    background-color: var(--primary-color);
+}
+
+
+/* Présentation des chambres sur fond noir petit format */
+@media (max-width:799px) {
+    .mainChambre {
+        padding-top: 15vh;
+
+    }
+
+    .mainChambre section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .mainChambre article {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .mainChambre img {
+        width: 100%;
+    }
+
+    .mainChambre button {
+        margin-top: 5rem;
+        border: 1px solid var(--secondary-color);
+        padding: 1rem 3rem;
+        height: 4rem;
+        background-color: transparent;
+        color: var(--four-color);
+        cursor: pointer;
+        margin-bottom: 5rem;
+    }
+}
+
+/* Présentation des chambres sur fond noir grand format */
+@media (min-width:800px) {
+    .mainChambre section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .mainChambre article {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        margin: 3rem;
+    }
+
+    .mainChambre img {
+        max-width: 100%;
+    }
+
+    .mainChambre button {
+        margin-top: 5rem;
+        border: 1px solid var(--secondary-color);
+        padding: 1rem 3rem;
+        height: 4rem;
+        background-color: transparent;
+        color: var(--four-color);
+        cursor: pointer;
+    }
+}
+
+/* 
+      _(,__           __), 
+  (_,d888888888b,d888888888b
+   d888888888888/888888888888b_)
+(_8888888P'""'`Y8Y`'""'"Y88888b
+  Y8888P.-'     `      '-.Y8888b_)
+ ,_Y88P (_(_(        )_)_) d88Y_,
+  Y88b,  (o  )      (o  ) d8888P
+  `Y888   '-'        '-'  `88Y`
+  ,d/O\         c         /O\b,
+    \_/'.,______w______,.'\_/
+       .-`             `-.
+      /   , d88b  d88b_   \
+     /   / 88888bd88888`\  \
+    /   / \ Y88888888Y   \  \
+    \  \   \ 88888888    /  /
+     `\ `.  \d8888888b, /\\/
+       `.//.d8888888888b; |
+         |/d888888888888b/
+         d8888888888888888b
+      ,_d88p""q88888p""q888b,
+      `""'`\    "`|    /`'""`
+            `.    |===/
+              >   |   |
+              /   |   |
+             |    |   |
+             |    Y  /
+             \   /  /
+              | /| /
+             / / / |
+            /=/  |=/
+           `"`   `"`
+*/
+/* mainIconeSlide */
+/* Presentations des chambres avec icones + slides photos  petit */
+@media (max-width:799px) {
+
+    .mainIconeSlide {
+        width: 100vw;
+        overflow-x: hidden;
+        /* pour cacher ce qui dépasse*/
+        padding-top: 7rem;
+    }
+
+    .imageChambreClassique,
+    .imageChambreConfort,
+    .imageChambreDeluxe,
+    .imageChambreSuite {
+        height: 100vh;
+        position: relative;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .imageChambreClassique img,
+    .imageChambreConfort img,
+    .imageChambreDeluxe img,
+    .imageChambreSuite img {
+        position: absolute;
+        height: 100%;
+
+
+
+    }
+
+    .mainIconeSlide h1 {
+        position: relative;
+        text-align: center;
+        color: var(--secondary-color);
+        margin: 2rem;
+
+
+    }
+
+    .mainIconeSlide article p {
+        padding: 2.5rem;
+        text-align: justify;
+    }
+
+    .icone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem;
+    }
+
+    .icone span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .icone1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem;
+        width: 70%;
+        margin: 0 auto;
+
+    }
+
+    .icone1 span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .mainIconeSlide .slideChambre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainIconeSlide .slideChambre article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .mainIconeSlide .slideChambre article img {
+        width: 100%;
+
+    }
+
+    .mainIconeSlide .slideChambre p {
+        padding: 2.5rem;
+        background-color: var(--third-color);
+    }
+
+}
+
+/* Presentations des chambres avec icones + slides photos grand */
+@media (min-width:800px) {
+
+    .imageChambreClassique,
+    .imageChambreConfort,
+    .imageChambreDeluxe,
+    .imageChambreSuite {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .imageChambreClassique img,
+    .imageChambreConfort img,
+    .imageChambreDeluxe img,
+    .imageChambreSuite img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .mainIconeSlide article h1 {
+        color: var(--secondary-color);
+        text-align: center;
+        margin: 5rem;
+    }
+
+    .mainIconeSlide article p {
+        width: 50%;
+        margin: 0 auto;
+        text-align: justify;
+        line-height: 3rem;
+    }
+
+    .class {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icone {
+        margin: 5rem;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icone span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icone span i {
+        margin: 3rem;
+    }
+
+    .icone1 {
+        margin: 5rem;
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icone1 span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icone1 span i {
+        margin: 3rem;
+    }
+
+    .mainIconeSlide .slideChambre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainIconeSlide .slideChambre article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mainIconeSlide .slideChambre article img {
+        margin: 10rem;
+    }
+
+    .mainIconeSlide .slideChambre p {
+        color: var(--primary-color);
+        background-color: var(--third-color);
+        padding: 20rem;
+        z-index: -1;
+        transform: translateY(-25rem);
+        box-shadow: 10px 11px 37px -3px rgba(10, 10, 10, 0.17);
+        -webkit-box-shadow: 10px 11px 37px -3px rgba(10, 10, 10, 0.17);
+        -moz-box-shadow: 10px 11px 37px -3px rgba(10, 10, 10, 0.17);
+    }
+
+}
+
+/* 
+                          (             ) 
+                  )      (*)           (*)      ( 
+         *       (*)      |             |      (*) 
+                  |      |~|           |~|      |          * 
+                 |~|     | |           | |     |~| 
+                 | |     | |           | |     | | 
+                ,| |a@@@@| |@@@@@@@@@@@| |@@@@a| |. 
+           .,a@@@| |@@@@@| |@@@@@@@@@@@| |@@@@@| |@@@@a,. 
+         ,a@@@@@@| |@@@@@@@@@@@@.@@@@@@@@@@@@@@| |@@@@@@@a, 
+        a@@@@@@@@@@@@@@@@@@@@@' . `@@@@@@@@@@@@@@@@@@@@@@@@a 
+        ;`@@@@@@@@@@@@@@@@@@'   .   `@@@@@@@@@@@@@@@@@@@@@'; 
+        ;@@@`@@@@@@@@@@@@@'     .     `@@@@@@@@@@@@@@@@'@@@; 
+        ;@@@;,.aaaaaaaaaa       .       aaaaa,,aaaaaaa,;@@@; 
+        ;;@;;;;@@@@@@@@;@      @.@      ;@@@;;;@@@@@@;;;;@@; 
+        ;;;;;;;@@@@;@@;;@    @@ . @@    ;;@;;;;@@;@@@;;;;;;; 
+        ;;;;;;;;@@;;;;;;;  @@   .   @@  ;;;;;;;;;;;@@;;;;@;; 
+        ;;;;;;;;;;;;;;;;;@@     .     @@;;;;;;;;;;;;;;;;@@a; 
+    ,%%%;;;;;;;;@;;;;;;;;       .       ;;;;;;;;;;;;;;;;@@;;%%%, 
+ .%%%%%%;;;;;;;a@;;;;;;;;     ,%%%,     ;;;;;;;;;;;;;;;;;;;;%%%%%%, 
+.%%%%%%%;;;;;;;@@;;;;;;;;   ,%%%%%%%,   ;;;;;;;;;;;;;;;;;;;;%%%%%%%, 
+%%%%%%%%`;;;;;;;;;;;;;;;;  %%%%%%%%%%%  ;;;;;;;;;;;;;;;;;;;'%%%%%%%% 
+%%%%%%%%%%%%`;;;;;;;;;;;;,%%%%%%%%%%%%%,;;;;;;;;;;;;;;;'%%%%%%%%%%%% 
+`%%%%%%%%%%%%%%%%%,,,,,,,%%%%%%%%%%%%%%%,,,,,,,%%%%%%%%%%%%%%%%%%%%' 
+  `%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%' 
+      `%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%' 
+             """"""""""""""`,,,,,,,,,'""""""""""""""""" 
+                            `%%%%%%%' 
+                             `%%%%%' 
+                               %%% 
+                              %%%%% 
+                           .,%%%%%%%,. 
+                      ,%%%%%%%%%%%%%%%%%%%, 
+          ---------------------------------------------
+*/
+/* mainRestaurant */
+main.mainRestaurant {
+    padding-top: 100vh;
+}
+
+main.mainRestaurant section.presentation {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main.mainRestaurant section.presentation p {
+    width: 50%;
+    text-align: justify;
+}
+
+.imageAcceuilRestaurant {
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/restaurant.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+/* main.mainResaurant little */
+@media (max-width:1023px) {
+
+    main.mainRestaurant section {
+        width: 100vw;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main.mainRestaurant section img {
+        max-width: 100%;
+    }
+
+    main.mainRestaurant section article {
+        font-weight: 200;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main.mainRestaurant section article h2,
+    main.mainRestaurant section article h3 {
+        text-align: center;
+        color: var(--secondary-color);
+        padding: 1rem;
+        font-weight: 500;
+    }
+
+    main.mainRestaurant section article ul {
+        list-style-type: none;
+        color: var(--four-color);
+        text-align: center;
+        max-width: 700px;
+        padding: 3rem;
+    }
+
+    main.mainRestaurant section article button {
+        color: var(--four-color);
+        border: 1px solid var(--secondary-color);
+        padding: 1rem 2rem;
+        margin: 1rem;
+        background-color: transparent;
+    }
+}
+
+/* main.mainResaurant big */
+@media (min-width:1024px) {
+    main.mainRestaurant section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+
+    main.mainRestaurant section img {
+        transform: translateX(50px);
+        max-width: 100%;
+    }
+
+    main.mainRestaurant section article {
+        font-weight: 200;
+        width: 500px;
+        background-color: var(--primary-color);
+        transform: translateX(-50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    main.mainRestaurant section article h2,
+    main.mainRestaurant section article h3 {
+        text-align: center;
+        color: var(--secondary-color);
+        padding: 1rem;
+        font-weight: 500;
+    }
+
+    main.mainRestaurant section article ul {
+        list-style-type: none;
+        color: var(--four-color);
+        text-align: center;
+        padding: 1rem;
+    }
+
+    main.mainRestaurant section article button {
+        color: var(--four-color);
+        border: 1px solid var(--secondary-color);
+        padding: 1rem 2rem;
+        margin: 1rem;
+        background-color: transparent;
+    }
+}
+
+/* 
+        __
+        / /\
+       / /  \
+      / /    \__________
+     / /      \        /\
+    /_/        \      / /
+ ___\ \      ___\____/_/_
+/____\ \    /___________/\
+\     \ \   \           \ \
+ \     \ \   \____       \ \
+  \     \ \  /   /\       \ \
+   \   / \_\/   / /        \ \
+    \ /        / /__________\/
+     /        / /     /
+    /        / /     /
+   /________/ /\    /
+   \________\/\ \  /
+               \_\/
+*/
+/* mainSpa */
+/* image */
+.imageAcceuilSpa {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/IMG_8164.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 42%;
+}
+
+main.mainSpa {
+    padding-top: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 5rem;
+    font-weight: 500;
+}
+
+/* main.mainSpa littel*/
+@media (max-width:1023px) {
+    main.mainSpa section.sectionSpaPresentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    main.mainSpa section.sectionSpaPresentation p {
+        width: 80%;
+        text-align: justify;
+        margin-top: 5rem;
+        line-height: 3rem;
+
+    }
+
+    main.mainSpa section {
+        width: 100vw;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main.mainSpa section img {
+        max-width: 100%;
+    }
+
+    main.mainSpa section article {
+        font-weight: 200;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main.mainSpa section article h2 {
+        text-align: center;
+        color: var(--secondary-color);
+        padding: 1rem;
+        font-weight: 500;
+    }
+
+    main.mainSpa section article p {
+        color: var(--four-color);
+        text-align: center;
+        max-width: 700px;
+        padding: 3rem;
+    }
+
+    main.mainSpa section article button {
+        color: var(--four-color);
+        border: 1px solid var(--secondary-color);
+        padding: 1rem 2rem;
+        margin: 1rem;
+        background-color: transparent;
+    }
+}
+
+/* main.mainSpa big*/
+@media (min-width:1024px) {
+    main.mainSpa section.sectionSpaPresentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    main.mainSpa section.sectionSpaPresentation p {
+        width: 50%;
+        text-align: justify;
+        margin-top: 5rem;
+        line-height: 3rem;
+    }
+
+    main.mainSpa section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    main.mainSpa section img {
+        transform: translateX(50px);
+        max-width: 100%;
+    }
+
+    main.mainSpa section article {
+        font-weight: 200;
+        width: 500px;
+        background-color: var(--primary-color);
+        transform: translateX(-50px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    main.mainSpa section article h2 {
+        text-align: center;
+        color: var(--secondary-color);
+        padding: 1rem;
+        font-weight: 500;
+    }
+
+    main.mainSpa section article p {
+        color: var(--four-color);
+        text-align: center;
+        padding: 1rem;
+    }
+
+    main.mainSpa section article button {
+        color: var(--four-color);
+        border: 1px solid var(--secondary-color);
+        padding: 1rem 2rem;
+        margin: 1rem;
+        background-color: transparent;
+    }
+}
+
+/* 
+                                   8
+                                   8
+                        .,,aadd88P=8=Y88bbaa,,.
+                  .,ad88888P:a8P:d888b:Y8a:Y88888ba,.
+              ,ad888888P:a8888:a8888888a:8888a:Y888888ba,
+           ,a8888888:d8888888:d888888888b:8888888b:8888888a,
+        ,a88888888:d88888888:d88888888888b:88888888b:88888888a,
+      ,d88888888:d888888888:d8888888888888b:888888888b:88888888b,
+    ,d88888888:d8888888888I:888888888888888:I8888888888b:88888888b,
+  ,d888888888:d88888888888:88888888888888888:88888888888b:888888888b,
+ d8888888888:I888888888888:88888888888888888:888888888888I:8888888888b
+d8P"'   `"Y8:8P"'     `"Y8:8P"'    8    `"Y8:8P"'     `"Y8:8P"'   `"Y8b
+"           "             "        8        "             "           "
+                                   8 
+                                   8
+                                   8
+                                   8
+                                   8
+                                   8
+                                   8
+                                   8
+                                   8
+                                  ,8,
+                                  888
+                                  888      __
+                                  Y88b,,,d88P
+                                  `Y8888888P'
+                                    `"""""'
+ */
+/* mainReservation */
+main.mainReservation {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main.mainReservation h1 {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+main.mainReservation form {
+    width: 45%;
+}
+
+main.mainReservation section {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+main.mainReservation button {
+
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    margin: 3rem 0;
+    width: 12rem;
+    height: 5rem;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    color: var(--four-color);
+}
+
+/* 
+        _____________________________________________
+      //:::::::::::::::::::::::::::::::::::::::::::::\\
+    //:::_______:::::::::________::::::::::_____:::::::\\
+  //:::_/   _-"":::_--"""        """--_::::\_  ):::::::::\\
+ //:::/    /:::::_"                    "-_:::\/:::::|^\:::\\
+//:::/   /~::::::I__                      \:::::::::|  \:::\\
+\\:::\   (::::::::::""""---___________     "--------"  /::://
+ \\:::\  |::::::::::::::::::::::::::::""""==____      /::://
+  \\:::"\/::::::::::::::::::::::::::::::::::::::\   /~::://
+    \\:::::::::::::::::::::::::::::::::::::::::::)/~::://
+      \\::::\""""""------_____::::::::::::::::::::::://
+        \\:::"\               """""-----_____:::::://
+          \\:::"\    __----__                )::://
+            \\:::"\/~::::::::~\_         __/~:://
+              \\::::::::::::::::""----""":::://
+                \\::::::::::::::::::::::::://
+                  \\:::\^""--._.--""^/::://
+                    \\::"\         /":://
+                      \\::"\     /":://
+                        \\::"\_/":://
+                          \\::::://
+                            \\_//
+                              "
+*/
+/* mainAvis */
+main.mainAvis {
+    padding-top: 15rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main.mainAvis h1 {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+main.mainAvis section {
+    width: 45%;
+    margin: 5rem 0;
+}
+
+main.mainAvis section p.icons {
+    padding-top: 3rem;
+    text-align: right;
+    color: var(--secondary-color);
+}
+
+/* 
+              *         *      *         *
+          ***          **********          ***
+       *****           **********           *****
+     *******           **********           *******
+   **********         ************         **********
+  ****************************************************
+ ******************************************************
+********************************************************
+********************************************************
+********************************************************
+ ******************************************************
+  ********      ************************      ********
+   *******       *     *********      *       *******
+     ******             *******              ******
+       *****             *****              *****
+          ***             ***              ***
+            **             *              **
+ */
+/* mainQuiSommesNous */
+main.mainQuiSommesNous {
+    padding-top: 15rem;
+    min-height: 100vh;
+}
+
+main.mainQuiSommesNous section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main.mainQuiSommesNous section p {
+    width: 50%;
+    padding-top: 5rem;
+}
+
+/* 
+        _..od88888bo.._
+      .d""'   888   '""b.
+    .d"'      888      '"b.
+   d"'        888        '"b
+  d'          888          'b
+ 88          88888          88
+(88         8888888         88)
+ 88        888888888        88
+  YI      888 888 888      IP
+   YI    888  888  888    IP
+    "9. 888   888   888 .P"
+      "888    888    888"
+        `""Y8888888P""`
+ */
+
+/* mainCarte */
+main.mainCarte section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+main.mainCarte section iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+              '
+                  )                    `
+                 /(l                   /)
+                (  \                  / (
+                ) * )                ( , )
+                 \#/                  \#'
+               .-"#'-.             .-"#"=,
+            (  |"-.='|            '|"-,-"|
+            )\ |     |  ,        /(|     | /(         ,
+   (       /  )|     | (\       (  \     | ) )       ((
+   )\     (   (|     | ) )      ) , )    |/ (        ) \
+  /  )     ) . )     |/  (     ( # (     ( , )      /   )
+ ( * (      \#/|     (`# )      `#/|     |`#/      (  '(
+  \#/     .-"#'-.   .-"#'-,   .-"#'-.   .-=#"-;     `#/
+.-"#'-.   |"=,-"|   |"-.-"|)  1"-.-"|   |"-.-"|   ,-"#"-.
+|"-.-"|   |  !  |   |     |   |     |   |     !   |"-.-"|
+|     |   |     |._,|     |   |     |._,|     |   |     |
+|     |   |     |   |     |   |     |   |     |   |     |
+|     |   |     |   |     |   |     |   |     |   |     |
+'-._,-'   '-._,-'   '-._,-'   '-._,-'   '-._,-"   '-._,-'
+ */
+/* mainContact */
+main.mainContact {
+    min-height: 100vh;
+    padding-top: 15rem;
+}
+
+main.mainContact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.mainContact form input {
+    border: 1px solid var(--secondary-color);
+    width: 40rem;
+    height: 4rem;
+}
+
+main.mainContact form textarea {
+    border: 1px solid var(--secondary-color);
+    width: 81rem;
+    height: 30rem;
+}
+
+main.mainContact button {
+
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    margin: 3rem 0;
+    width: 12rem;
+    height: 5rem;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    color: var(--four-color);
+}
+
+/* 
+     ____          ____
+    |oooo|        |oooo|
+    |oooo| .----. |oooo|
+    |Oooo|/\_||_/\|oooO|
+    `----' / __ \ `----'
+    ,/ |#|/\/__\/\|#| \,
+   /  \|#|| |/\| ||#|/  \
+  / \_/|_|| |/\| ||_|\_/ \
+ |_\/    o\=----=/o    \/_|
+ <_>      |=\__/=|      <_>
+ <_>      |------|      <_>
+ | |   ___|======|___   | |
+//\\  / |O|======|O| \  //\\
+|  |  | |O+------+O| |  |  |
+|\/|  \_+/        \+_/  |\/|
+\__/  _|||        |||_  \__/
+      | ||        || |
+     [==|]        [|==]
+     [===]        [===]
+      >_<          >_<
+     || ||        || ||
+     || ||        || ||
+     || ||        || ||   
+   __|\_/|__    __|\_/|__
+  /___n_n___\  /___n_n___\
+ */
+/* mainRecrutement */
+main.mainRecrutement {
+    min-height: 100vh;
+    padding-top: 15rem;
+}
+
+main.mainRecrutement form {
+    width: 50%;
+    margin: 10rem auto;
+}
+
+main.mainRecrutement form p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+main.mainRecrutement form p select,
+main.mainRecrutement form p input {
+    height: 3rem;
+    margin: 1rem;
+    border: 1px solid var(--secondary-color);
+}
+
+main.mainRecrutement form p.thirty-three select,
+main.mainRecrutement form p.thirty-three input {
+    width: 33.33%;
+}
+
+main.mainRecrutement form p.date input {
+    width: 33.33%;
+    margin-right: 66.7%;
+}
+
+main.mainRecrutement form p.fifty input,
+main.mainRecrutement form p.fifty select {
+    width: 50%;
+}
+
+
+main.mainRecrutement form p.cent input,
+main.mainRecrutement form p.cent select {
+    width: 100%;
+}
+
+main.mainRecrutement form p.file input,
+main.mainRecrutement form p.file select {
+    width: 50%;
+    border: none;
+}
+
+main.mainRecrutement form p.check {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+main.mainRecrutement form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    margin: 3rem 0;
+    width: 12rem;
+    height: 5rem;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    color: var(--four-color);
+}
+
+/* 
+         ___     _,.--.,_
+      .-~   ~--"~-.   ._ "-.
+     /      ./_    Y    "-. \
+    Y       :~     !         Y
+    lq p    |     /         .|
+ _   \. .-, l    /          |j
+()\___) |/   \_/";          !
+ \._____.-~\  .  ~\.      ./
+            Y_ Y_. "vr"~  T
+            (  (    |L    j   
+            [nn[nn..][nn..]
+        ~~~~~~~~~~~~~~~~~~~~~~~
+*/
+/* mainEvent */
+
+main.mainEvent article {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main.mainEvent p {
+    width: 50%;
+    text-align: justify;
+}
+
+main.mainEvent img {
+    width: 100%;
+}
+
+main.mainEvent .mainContent {
+    padding: 3rem 4rem;
+    transition: all .2s;
+}
+
+main.mainEvent .displayMovies {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+main.mainEvent .card {
+    max-width: 30rem;
+    background-color: #fff;
+    color: var(--gray);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-dark);
+    transition: all 1s;
+}
+
+main.mainEvent .card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow-light);
+}
+
+main.mainEvent .card-content {
+    text-align: center;
+}
+
+main.mainEvent .card-img {
+    width: 100%;
+    max-height: 40rem;
+    overflow: hidden;
+}
+
+main.mainEvent .card-img img {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+
+}
+
+main.mainEvent .card-content h3 {
+    font-size: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+main.mainEvent .card-content h4 {
+    font-size: 2rem;
+    font-weight: 100;
+    padding-bottom: .8rem;
+    color: var(--gray-light);
+}
+
+main.mainEvent .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main.mainEvent .containerMovie {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+main.mainEvent .detailsMovies {
+    background-color: var(--gray-2);
+    /* height: calc(100vh - 54px); */
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    /* padding: 2rem 3rem 6rem 3rem; */
+    transition: all .5s;
+
+}
+
+main.mainEvent .detailsImg {
+    width: 30%;
+}
+
+main.mainEvent .detailsImg img {
+    box-shadow: var(--box-shadow-light);
+}
+
+main.mainEvent .detailsContent {
+    width: 70%;
+    padding: 0 5rem;
+}
+
+main.mainEvent .detailsContent h3 {
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+}
+
+main.mainEvent .detailsContent h4 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 100;
+}
+
+main.mainEvent .detailsContent h4 span {
+    font-weight: 500;
+}
+
+main.mainEvent .detailsContent h5 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main.mainEvent .detailsContent p {
+    font-weight: 100;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+main.mainEvent .back button {
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+}
+
+main.mainEvent .back i {
+    font-size: 4rem;
+    color: #fff;
+    transition: all .2s;
+}
+
+main.mainEvent .back i:hover {
+    color: var(--gray-light);
+    cursor: pointer;
+    transform: scale(.9);
+}
+
+main.mainEvent .cardDetails {
+    display: flex;
+    margin-top: 3rem;
+}
+
+main.mainEvent .btn {
+    border: 0;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: var(--gray);
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    transition: all .2s;
+    outline: 0;
+}
+
+main.mainEvent .btn:hover {
+    background-color: var(--gray-light);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(.97);
+}
+
+/* modal */
+main.mainEvent #modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(50, 50, 50, .8);
+}
+
+
+.hidden {
+    padding: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    transition: all .5s;
+}
+
+@media (max-width : 600px) {
+    main.mainEvent .cardDetails {
+        flex-direction: column;
+    }
+
+    main.mainEvent .container,
+    main.mainEvent .detailsImg,
+    main.mainEvent .detailsContent {
+        width: 100%;
+    }
+
+    main.mainEvent .detailsContent {
+        margin-top: 3rem;
+        padding: 0;
+    }
+}
+
+/* footer */
+footer {
+    background-color: var(--primary-color);
+}
+
+
+footer p {
+    text-align: center;
+    color: var(--four-color);
+    padding: 2rem;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL&#8226;CHAMBORD&#8226;PARIS</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../images/logo.png" />
+    <!-- style for all -->
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- button menu left -->
+        <div class="menu-btn">
+            <div class="menu-bar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <p>MENU</p>
+        </div>
+        <!-- h1 title -->
+        <h2 class="h2Header">HOTEL&#8226;CHAMBORD&#8226;PARIS</h2>
+        <!-- button menu right -->
+        <button>
+            <p>RESERVEZ</p>
+        </button>
+    </header>
+    <!-- image background -->
+    <!-- <div class="imageAcceuilRestaurant"></div> -->
+    <nav>
+        <button>X</button>
+        <ul>
+            <li class="menu-nav"><a href="../../index.html"><span>ACCEUIL</span></a></li>
+            <li class="menu-nav"><span>CHAMBRES & SUITE</span>
+                <ul class="sous-menu">
+                    <li><a href="chambres.html">VUE D'ENSEMBLE</a></li>
+                    <li><a href="chambre-classique.html">CHAMBRE CLASSIQUE</a></li>
+                    <li><a href="chambre-confort.html">CHAMBRE CONFORT</a></li>
+                    <li><a href="chambre-Deluxe.html">CHAMBRE DELUXE</a></li>
+                    <li><a href="suite.html">SUITE DELUXE</a></li>
+                </ul>
+            </li>
+            <li class="menu-nav"><span>RESTAURANT</span>
+                <ul class="sous-menu">
+                    <li><a href="restaurant.html">DÉCOUVREZ NOTRE RESTAURANT</a></li>
+                    <li><a href="restaurant.html#brasserie">CARTE BRASSERIE</a></li>
+                    <li><a href="restaurant.html#degustation">CARTE DÉGUSTATION</a></li>
+                    <li><a href="restaurant.html#restaurant">CARTE RESTAURANT</a></li>
+                </ul>
+            </li>
+            <li class="menu-nav"><span>LE SPA</span>
+                <ul class="sous-menu">
+                    <li><a href="spa.html">LE SPA & NOS SOINS</a></li>
+                    <li><a href="spa.html#detente">SOIN DÉTENTE</a></li>
+                    <li><a href="spa.html#decouverte">SOIN DÉCOUVERTE</a></li>
+                    <li><a href="spa.html#relaxant">SOIN RELAXANT</a></li>
+                    <li><a href="spa.html#plaisir">SOIN PLAISIR</a></li>
+                    <li><a href="spa.html#evasion">SOIN ÉVASION</a></li>
+                </ul>
+            </li>
+            <li class="menu-nav"><a href="reservation.html"><span>RÉSERVATION</span></a></li>
+            <li class="menu-nav"><a href="avis.html"><span>AVIS</span></a></li>
+            <li class="menu-nav"><span>L’HOTEL</span>
+                <ul class="sous-menu">
+                    <li><a href="qui-sommes-nous.html">QUI SOMMES NOUS</a></li>
+                    <li><a href="carte.html">PLAN & ACCÈS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="form-recrutement.html">RECRUTEMENT</a></li>
+                    <li><a href="evenements.html">ÉVÉNEMENT</a></li>
+                    <li><a href="#">PRESSE</a></li>
+                </ul>
+            </li>
+            <li class="menu-nav"><a href="#"><span>ACTUALITÉS</span></a></li>
+            <li class="menu-nav"><span>LIENS DIVERS</span>
+                <ul class="sous-menu">
+                    <li><a href="#">MENTION LÉGALE</a></li>
+                    <li><a href="#">CONDITIONS GÉNÉRALES DE VENTE</a></li>
+                    <li><a href="#">PLAN DU SITE</a></li>
+                    <li><a href="#">IMPRIMER LA PAGE</a></li>
+                    <li><a href="#">S’INSCRIRE À LA NEWSLETTER</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- main reservation -->
+    <main class="mainReservation">
+        <h1>RÉSERVATION</h1>
+        <form action="" method="" enctype="multipart/form-data">
+            <section>
+                <label for="start">Date d'arrivé:</label>
+                <input type="date" id="start" name="trip-start" value="2021-08-06" min="2021-08-06" max="2030-12-31">
+                <label for="end">Date d'arrivé:</label>
+                <input type="date" id="end" name="trip-end" value="2021-08-06" min="2021-08-06" max="2030-12-31">
+            </section>
+            <section>
+                <label for="adulte-select">Nombre d'adulte(s):</label>
+                <select name="adulte" id="adulte-select">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label for="children-select">Nombre d'enfant(s):</label>
+                <select name="children" id="children-select">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </section>
+            <section>
+                <label for="room-select">Choix de la chambre:</label>
+                <select name="room" id="room-select">
+                    <option value=""></option>
+                    <option value="classique">Chambre classique</option>
+                    <option value="confort">Chambre confort</option>
+                    <option value="deluxe">Chambre deluxe</option>
+                    <option value="suite">Suite deluxe</option>
+                </select>
+            </section>
+        </form>
+        <button>
+            <p>RESERVEZ</p>
+        </button>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>&copy;copyright Vanilda & &copy;copyright Laurent</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
